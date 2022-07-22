@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Gym</title>
+    
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        position: absolute;
+        left: 30px;
+        top: 12px;
+        display: inline-block;
+
+
+    }
+    .left img{
+        width: 200px;
+        filter:invert(100%)
+
+    }
+    .left div{
+        text-align: center;
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .center {
+        display: block;
+        width: 50%;
+        margin: 12px auto;
+        
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 12px;
+        display: inline-block;
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: darkred;
+        color: white;
+        padding: 15px 10px;
+        font-size: 15px;
+        cursor: pointer;
+        border: 2px;
+        border-color: black;
+        border-radius: 5px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 23px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+    .container{
+        border: 2px solid white;
+    margin: 188px 58px;
+    padding: 44px;
+    width: 30%;
+    border-radius: 4px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="/img/LOGO.png" alt="logo">
+           <div>Golden Gym</div>
+            </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Chat With Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now</h1>
+        <form action="data.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Email Adress">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
